@@ -1,0 +1,24 @@
+ALGORITHM controle de chaine
+VAR
+x="my name is Mootez ."
+word:INTEGER:=0
+voyel:INTEGER:=0
+nbch:INTEGER:=0
+
+    
+BEGIN
+FOR i FROM 0 TO x.length-2 STEP step  DO
+    IF (x[i]=" ") THEN
+    word:=word+1;
+
+        END IF
+    ELSE IF (x[i]="a"or"e"or"i"or"u"or"o"or"y") THEN
+    voyel:=voyel+1 ;
+    END IF
+      ELSE IF (x[i]<>" ") THEN
+      nbch:=nbch+1
+    END IF
+      
+END_FOR
+
+END
